@@ -1,1 +1,3 @@
-spring.application.name=SpringBoot-k8s-Yaml
+spring:
+  application:
+    name: SpringBoot-k8s-Yaml
