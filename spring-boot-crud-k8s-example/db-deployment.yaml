@@ -41,9 +41,9 @@ spec:
           name: mysql
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: shrikant
+              value: root # username & password will be root
             - name: MYSQL_DATABASE # Setting Database Name from a 'ConfigMap'
-              value: kale
+              value: k8s
           ports:
             - containerPort: 3306
               name: mysql
