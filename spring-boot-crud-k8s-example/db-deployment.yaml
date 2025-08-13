@@ -46,7 +46,10 @@ spec:
                   name: mysql-secrets
                   key: password
             - name: MYSQL_DATABASE # Setting Database Name from a 'ConfigMap'
-              value: k8s
+              valueFrom :
+                configMapKeyRef :
+                  name : db-config
+                  key :  dbName
           ports:
             - containerPort: 3306
               name: mysql
