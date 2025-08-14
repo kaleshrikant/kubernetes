@@ -5,7 +5,13 @@ plugins {
 }
 
 group = 'com.kaleshrikant'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0'
+
+bootJar {
+    archiveFileName = 'spring-boot-helm.jar'
+    mainClass = 'com.kaleshrikant.SpringBootHelmApplication'
+}
+
 
 java {
 	toolchain {
